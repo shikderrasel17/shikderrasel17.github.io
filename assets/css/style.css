@@ -99,6 +99,20 @@ nav.main a:hover { color: var(--ink); }
 nav.main a:hover::after, nav.main a[aria-current="page"]::after { right: 0; }
 nav.main a[aria-current="page"] { color: var(--ink); font-weight: 600; }
 
+/* Highlighted nav item (Research, open for collaboration) */
+nav.main a.nav-highlight {
+  background: var(--accent);
+  color: #fff;
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.86rem;
+  box-shadow: var(--shadow);
+}
+nav.main a.nav-highlight::after { display: none; }
+nav.main a.nav-highlight:hover { background: var(--ink); color: #fff; transform: translateY(-1px); }
+nav.main a.nav-highlight[aria-current="page"] { box-shadow: 0 0 0 2px var(--accent-soft), var(--shadow); }
+
 /* Hero */
 .hero {
   position: relative;
