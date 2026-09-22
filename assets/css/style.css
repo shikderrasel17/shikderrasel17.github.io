@@ -99,9 +99,13 @@ nav.main a:hover { color: var(--ink); }
 nav.main a:hover::after, nav.main a[aria-current="page"]::after { right: 0; }
 nav.main a[aria-current="page"] { color: var(--ink); font-weight: 600; }
 
-/* Highlighted nav item (Research, open for collaboration) */
-nav.main a.nav-highlight {
-  background: var(--accent);
+/* Highlighted nav item (Research, open for collaboration).
+   Fixed color on purpose, not tied to --accent, so it always contrasts
+   cleanly with the white text, and it never changes even on the research
+   page itself. */
+nav.main a.nav-highlight,
+nav.main a.nav-highlight[aria-current="page"] {
+  background: #1d6fd6;
   color: #fff;
   padding: 5px 14px;
   border-radius: 999px;
@@ -110,8 +114,15 @@ nav.main a.nav-highlight {
   box-shadow: var(--shadow);
 }
 nav.main a.nav-highlight::after { display: none; }
-nav.main a.nav-highlight:hover { background: var(--ink); color: #fff; transform: translateY(-1px); }
-nav.main a.nav-highlight[aria-current="page"] { box-shadow: 0 0 0 2px var(--accent-soft), var(--shadow); }
+nav.main a.nav-highlight:hover,
+nav.main a.nav-highlight[aria-current="page"]:hover { background: #1558ab; color: #fff; transform: translateY(-1px); }
+
+/* Top-corner icon row: social links repeated as small icons on every page */
+.header-icons { display: flex; align-items: center; gap: 12px; }
+.header-icons a { display: inline-flex; line-height: 0; }
+.header-icons img { width: 17px; height: 17px; opacity: 0.72; transition: opacity .18s ease, transform .18s ease; display: block; }
+.header-icons .msym { font-size: 19px; color: #9aa0ab; opacity: 0.85; transition: opacity .18s ease, transform .18s ease; }
+.header-icons a:hover img, .header-icons a:hover .msym { opacity: 1; transform: translateY(-1px); }
 
 /* Hero */
 .hero {
