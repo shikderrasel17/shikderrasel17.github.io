@@ -4,7 +4,8 @@ Static portfolio site (plain HTML/CSS/JS, no build step, no framework).
 v2: Fraunces + Inter typography, mesh-gradient hero, scroll-reveal motion, About page.
 
 ## Structure
-- `index.html`, `about.html`, `research.html`, `publications.html`, `work.html`, `projects.html`, `cv.html`, `contact.html`
+- `index.html`, `about.html`, `research.html`, `publications.html`, `work.html`, `projects.html`, `contact.html`
+- There is no separate `cv.html` anymore. The academic/PhD CV link now lives on `publications.html`, and the job/industry resume link now lives on `work.html` (renamed "Experience" in the nav).
 - `assets/css/style.css` — all styling, one file
 - `assets/js/site.js` — scroll-reveal animation, one file, no dependencies
 - `assets/pdf/` — keep your existing CV/resume PDFs here (this update doesn't touch that folder):
