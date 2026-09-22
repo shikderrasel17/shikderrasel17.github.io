@@ -120,9 +120,9 @@ nav.main a.nav-highlight[aria-current="page"]:hover { background: #1558ab; color
 /* Top-corner icon row: social links repeated as small icons on every page */
 .header-icons { display: flex; align-items: center; gap: 12px; }
 .header-icons a { display: inline-flex; line-height: 0; }
-.header-icons img { width: 17px; height: 17px; opacity: 0.72; transition: opacity .18s ease, transform .18s ease; display: block; }
+.header-icons img, .header-icons svg { width: 17px; height: 17px; opacity: 0.72; transition: opacity .18s ease, transform .18s ease; display: block; }
 .header-icons .msym { font-size: 19px; color: #9aa0ab; opacity: 0.85; transition: opacity .18s ease, transform .18s ease; }
-.header-icons a:hover img, .header-icons a:hover .msym { opacity: 1; transform: translateY(-1px); }
+.header-icons a:hover img, .header-icons a:hover svg, .header-icons a:hover .msym { opacity: 1; transform: translateY(-1px); }
 
 /* Hero */
 .hero {

@@ -1,13 +1,20 @@
 # raselshikder-portfolio
 
 Static portfolio site (plain HTML/CSS/JS, no build step, no framework).
-v7: dark theme by default, photo backdrops on inner pages, and three new pages
-(Leadership, Academic History, Skills).
+v10: fixed the LinkedIn icon (now an inline SVG, no external icon service
+dependency), removed all "captain"/"captaincy" language in favor of
+"managing" the football team, reframed the Bashundhara Group write-up to
+lead with impact, and added a passage on how the three jobs shaped the
+research direction.
 
 ## Structure
 - `index.html` (home, doubles as the about page), `research.html`, `publications.html`,
   `work.html` (labeled "Experience"), `leadership.html`, `academic-history.html`,
-  `skills.html`, `projects.html`, `contact.html`
+  `skills.html`, `projects.html`, `hobbies.html`, `contact.html`
+- Every page has a `.header-icons` row in the top-right corner of the header:
+  LinkedIn, GitHub, Google Scholar, ORCID, and Contact. The LinkedIn icon is an
+  inline SVG so it never depends on an external service; the other three brand
+  icons still pull from `cdn.simpleicons.org` and need internet to load.
 - There is no `about.html` or `cv.html`. The about content lives on `index.html`.
   The academic/PhD CV link is on `publications.html`, the job/industry resume link
   is on `work.html`.
