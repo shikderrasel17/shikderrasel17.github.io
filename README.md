@@ -1,25 +1,38 @@
 # raselshikder-portfolio
 
 Static portfolio site (plain HTML/CSS/JS, no build step, no framework).
-v2: Fraunces + Inter typography, mesh-gradient hero, scroll-reveal motion, About page.
+v7: dark theme by default, photo backdrops on inner pages, and three new pages
+(Leadership, Academic History, Skills).
 
 ## Structure
-- `index.html`, `about.html`, `research.html`, `publications.html`, `work.html`, `projects.html`, `contact.html`
-- There is no separate `cv.html` anymore. The academic/PhD CV link now lives on `publications.html`, and the job/industry resume link now lives on `work.html` (renamed "Experience" in the nav).
+- `index.html` (home, doubles as the about page), `research.html`, `publications.html`,
+  `work.html` (labeled "Experience"), `leadership.html`, `academic-history.html`,
+  `skills.html`, `projects.html`, `contact.html`
+- There is no `about.html` or `cv.html`. The about content lives on `index.html`.
+  The academic/PhD CV link is on `publications.html`, the job/industry resume link
+  is on `work.html`.
 - `assets/css/style.css` — all styling, one file
 - `assets/js/site.js` — scroll-reveal animation, one file, no dependencies
 - `assets/pdf/` — keep your existing CV/resume PDFs here (this update doesn't touch that folder):
   - `rasel-shikder-academic-cv.pdf`
   - `rasel-shikder-industry-resume.pdf`
-- `assets/img/` — put a headshot here if you add one later
+
+## Theme
+The site is dark by default now (`data-theme="dark"` on every page's `<html>` tag),
+regardless of the visitor's system setting. To go back to following the visitor's
+system light/dark preference instead, remove `data-theme="dark"` from the `<html>`
+tag on each page.
 
 ## Photos
-- `assets/img/headshot.jpg` — profile photo used in the circular avatar on Home and About.
-- `assets/img/about-portrait.jpg` — larger environmental portrait on the About page.
-- `assets/img/gallery/` — nine photos in the About page "Moments" section (football, case competitions, flood relief, speaking, the olympiad).
-- `assets/img/logos/` — University of Dhaka, ICMAB, UTEP marks in the About page credentials strip.
+- `assets/img/headshot-large.jpg` — the big photo on the Home hero.
+- `assets/img/gallery/` — event photos. Used on the Home page (short teaser),
+  the Leadership page (full set with write-ups), and as blurred backdrop images
+  behind the hero on Research, Publications, Projects, and Contact.
+- `assets/img/logos/` — University of Dhaka, ICMAB, UTEP marks, used on the Home
+  page credentials strip and the Academic History timeline.
 
-To swap any of these for a different photo, replace the file at the same path and keep the same filename, or update the `src=` in `index.html` / `about.html`.
+To swap any of these for a different photo, replace the file at the same path and
+keep the same filename, or update the `src=` / `--hero-img` values in the HTML.
 
 ## Deploy to GitHub Pages (from the terminal)
 
