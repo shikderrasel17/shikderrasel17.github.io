@@ -1,14 +1,24 @@
 # raselshikder-portfolio
 
-Static portfolio site (plain HTML/CSS, no build step, no framework).
+Static portfolio site (plain HTML/CSS/JS, no build step, no framework).
+v2: Fraunces + Inter typography, mesh-gradient hero, scroll-reveal motion, About page.
 
 ## Structure
-- `index.html`, `research.html`, `publications.html`, `work.html`, `projects.html`, `cv.html`, `contact.html`
+- `index.html`, `about.html`, `research.html`, `publications.html`, `work.html`, `projects.html`, `cv.html`, `contact.html`
 - `assets/css/style.css` — all styling, one file
-- `assets/pdf/` — put your CV and resume PDFs here, named exactly:
+- `assets/js/site.js` — scroll-reveal animation, one file, no dependencies
+- `assets/pdf/` — keep your existing CV/resume PDFs here (this update doesn't touch that folder):
   - `rasel-shikder-academic-cv.pdf`
   - `rasel-shikder-industry-resume.pdf`
-- `assets/img/` — put a headshot / og-image here if you add one later
+- `assets/img/` — put a headshot here if you add one later
+
+## Photos
+- `assets/img/headshot.jpg` — profile photo used in the circular avatar on Home and About.
+- `assets/img/about-portrait.jpg` — larger environmental portrait on the About page.
+- `assets/img/gallery/` — nine photos in the About page "Moments" section (football, case competitions, flood relief, speaking, the olympiad).
+- `assets/img/logos/` — University of Dhaka, ICMAB, UTEP marks in the About page credentials strip.
+
+To swap any of these for a different photo, replace the file at the same path and keep the same filename, or update the `src=` in `index.html` / `about.html`.
 
 ## Deploy to GitHub Pages (from the terminal)
 
