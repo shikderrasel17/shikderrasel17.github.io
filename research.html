@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research — Rasel Shikder</title>
-<meta name="description" content="Research statement and themes: explainable machine learning for education and health decisions in resource-constrained settings.">
+<meta name="description" content="Research statement and themes: explainable machine learning for education and health decisions, written plainly, with honest status labels.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,33 +31,34 @@
 <section class="hero">
   <div class="wrap" data-reveal>
     <h1>Research</h1>
-    <p class="role">Explainable machine learning for decisions in education and health, in resource-constrained settings.</p>
+    <p class="role">Explainable machine learning, mostly around education and health decisions. Still early days.</p>
   </div>
 </section>
 
 <section class="block">
   <div class="wrap" data-reveal>
-    <h2>Research statement</h2>
-    <p>My research asks how machine learning models can support high-stakes decisions in organizations that operate with limited resources and limited technical capacity, without becoming black boxes those organizations cannot trust or govern. I focus on two settings: predicting student dropout risk in higher education, and analyzing e-health decision-making, in both cases using explainable ML methods so that the reasoning behind a prediction is visible to the people who have to act on it, not only its output.</p>
-    <p>Before starting doctoral study I coordinated data and reporting systems for a 13-center eye-care network and now run sales and executive MIS for a large industrial group in Bangladesh. Both roles gave me a close view of what happens when analytics are built for a resource-constrained organization rather than for a data-rich one: incomplete records, small sample sizes, staff with no data science background, and decisions that carry real consequences for real people. That is the setting my research is built for.</p>
+    <h2>What I'm actually asking</h2>
+    <p>I keep coming back to one question: can a machine learning model be useful to someone who has no reason to trust it? In a well-resourced setting, that question matters less — there's usually a data team standing behind the model, ready to explain it. In the settings I care about, there usually isn't. A university advisor deciding who needs extra support, or a clinic worker looking at a risk score, has to take the model's word for it or ignore it. Most of the time, they ignore it, and I don't blame them.</p>
+    <p>So the research I work on tries to make that trust a little easier to earn. In practice that means using explainable ML methods — models built so their reasoning can be shown, not just their output — on two problems: predicting which students are likely to drop out, and looking at how e-health decisions get made and supported by data. Both areas share the same constraint: limited data, limited technical staff, and decisions that genuinely affect people's lives.</p>
+    <p>I didn't come to this from a pure research background. Before I started thinking seriously about a PhD, I was coordinating data and reporting systems for a thirteen-center eye-care network, and I now run sales and executive reporting for a large industrial group. Neither job was research, but both put me in rooms where someone had to explain a number to a person who had every right to ask "why should I believe this." That's the question my research is actually trying to answer, just with more rigor than a Tuesday morning meeting allows.</p>
   </div>
 </section>
 
 <section class="block">
   <div class="wrap" data-reveal>
-    <h2>Research themes</h2>
+    <h2>What I'm working on</h2>
     <div class="card-grid">
       <div class="card">
-        <h3>Explainable ML for student dropout prediction</h3>
-        <p class="muted">Can interpretable model architectures identify at-risk students early enough, and clearly enough, for advisors without a technical background to act on the prediction? Focused on fairness across demographic subgroups, not only aggregate accuracy.</p>
+        <h3>Explainable ML for student dropout risk</h3>
+        <p class="muted">Trying to build models that flag at-risk students early enough, and explain themselves clearly enough, that an academic advisor with no machine learning background can actually act on the flag instead of just filing it away. I care more about whether the explanation holds up across different groups of students than about squeezing out one more point of accuracy.</p>
       </div>
       <div class="card">
-        <h3>Fairness in South Asian e-learning analytics</h3>
-        <p class="muted">How do dropout and performance models trained on South Asian e-learning data behave across gender, region, and socioeconomic subgroups, and what does that imply for deploying them in real institutions?</p>
+        <h3>Fairness in South Asian e-learning data</h3>
+        <p class="muted">A closer look at how dropout and performance models behave once you split the data by gender, region, or income — using e-learning data from South Asia specifically, because most of the fairness research I could find was built on data from richer, more connected education systems that don't look much like the ones I grew up in.</p>
       </div>
       <div class="card">
-        <h3>Information systems for e-health decision-making</h3>
-        <p class="muted">Drawing on direct experience coordinating a Hospital Information System across a multi-center eye-care network: how ERP/HIS design choices shape the quality and speed of clinical and operational decisions, and what an analytics layer on top of that system should and should not automate.</p>
+        <h3>Information systems for e-health decisions</h3>
+        <p class="muted">Drawing directly on my time coordinating a Hospital Information System across a multi-center eye-care network — thinking through which ERP and HIS design choices actually speed up good clinical and operational decisions, and where adding an analytics layer helps versus where it just adds noise.</p>
       </div>
     </div>
   </div>
@@ -65,7 +66,7 @@
 
 <section class="block">
   <div class="wrap" data-reveal>
-    <h2>Methods toolkit</h2>
+    <h2>Tools I actually use</h2>
     <div class="tag-row">
       <span class="tag">Python (Pandas, scikit-learn, TensorFlow, Keras)</span>
       <span class="tag">Explainable ML (SHAP-style interpretation)</span>
@@ -79,9 +80,9 @@
 
 <section class="block">
   <div class="wrap" data-reveal>
-    <h2>Current status</h2>
-    <p>Admitted with full funding to the PhD in Business Administration (Information Systems) at the University of Texas Rio Grande Valley, Fall 2026 cohort. Enrollment is pending visa processing. Applying in parallel to funded IS/analytics PhD programs for Fall 2027 as a contingency.</p>
-    <p><a class="btn secondary" href="publications.html">See publications and manuscripts →</a></p>
+    <h2>Where things stand</h2>
+    <p>I was admitted, with full funding, to the PhD in Business Administration (Information Systems) at the University of Texas Rio Grande Valley for the Fall 2026 cohort. I haven't been able to enroll yet — the visa process has taken longer than expected, and it's still open. While that gets sorted out, I'm applying in parallel to other funded PhD programs in Information Systems and analytics for Fall 2027, mostly so I have a real backup plan rather than just hoping the first one works out.</p>
+    <p><a class="btn secondary" href="publications.html">See publications and conference papers →</a></p>
   </div>
 </section>
 
@@ -91,6 +92,8 @@
     <span>
       <a href="https://www.linkedin.com/in/rasel-shikder" target="_blank" rel="noopener">LinkedIn</a> ·
       <a href="https://github.com/shikderrasel17" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://scholar.google.com/citations?user=NVeGccAAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a> ·
+      <a href="https://orcid.org/0009-0007-2475-4201" target="_blank" rel="noopener">ORCID</a> ·
       <a href="contact.html">Contact</a>
     </span>
   </div>
